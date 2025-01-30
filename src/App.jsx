@@ -3,13 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recha
 import axios from 'axios';
 import CommentSentimentAnalyzer from './assets/components/CommentSentimentAnalyzer';
 
-// import SentimentAnalyzer from './SentimentAnalyzer';
 
-// Helper function to extract video ID (keeping the existing function)
-// In your main App.jsx or in your highest-level component
-useEffect(() => {
-  document.title = "SentiTube";
-}, []);
 const extractVideoId = (url) => {
   try {
     const urlObj = new URL(url);
