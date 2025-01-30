@@ -6,6 +6,10 @@ import CommentSentimentAnalyzer from './assets/components/CommentSentimentAnalyz
 // import SentimentAnalyzer from './SentimentAnalyzer';
 
 // Helper function to extract video ID (keeping the existing function)
+// In your main App.jsx or in your highest-level component
+useEffect(() => {
+  document.title = "SentiTube";
+}, []);
 const extractVideoId = (url) => {
   try {
     const urlObj = new URL(url);
